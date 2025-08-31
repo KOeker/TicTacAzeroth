@@ -3,7 +3,7 @@ local addonName, TTA = ...
 TTA = TTA or {}
 _G[addonName] = TTA
 
-TTA.version = "1.0.0"
+TTA.version = "1.0.1"
 TTA.author = "KTDS"
 
 local DEBUG_MODE = false

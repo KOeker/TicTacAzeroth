@@ -141,6 +141,13 @@ function UI:CreatePlayerPanel(parent)
     inviteButton:SetScript("OnClick", function()
         local playerName = editBox:GetText():trim()
         if playerName ~= "" then
+            local ourName = Ambiguate(UnitName("player"), "short")
+            local targetName = Ambiguate(playerName, "short")
+            if ourName == targetName then
+                TTA:Print("You can't invite yourself to a game!")
+                return
+            end
+            
             if TTA:IsPlayerInGroup(playerName) then
                 local isBusy, reason = TTA:IsPlayerBusy(playerName)
                 if isBusy then

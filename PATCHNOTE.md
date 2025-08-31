@@ -1,5 +1,19 @@
 # TicTacAzeroth Changelog
 
+## [1.0.1] - 2025-08-31 - Bug Fix Update
+
+### 🐛 **Bug Fixes**
+- **Self-Invitation Prevention**: Added validation to prevent players from inviting themselves to a game
+  - Players can no longer enter their own name in the invitation dialog
+  - Clear error message displayed: "You can't invite yourself to a game!"
+  - Prevents confusing group membership error messages when attempting self-invitation
+
+### 🔧 **Technical Improvements**
+- **Input Validation**: Enhanced player name validation in invitation system
+- **User Experience**: Improved error messaging for invalid invitation attempts
+
+---
+
 ## [1.0.0] - 2025-08-31 - Initial Release
 
 ### 🎉 **Initial Release**
