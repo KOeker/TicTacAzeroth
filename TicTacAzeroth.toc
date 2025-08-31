@@ -1,0 +1,12 @@
+## Interface: 110200
+## Title: TicTacAzeroth
+## IconTexture: Interface/Addons/TicTacAzeroth/resources/icon_round.png
+## Notes: Play TicTacToe in World of Warcraft - against AI or other players.
+## Author: KTDS
+## Version: 1.0.0
+## SavedVariables: TicTacAzerothDB
+src/Sounds.lua
+src/Settings.lua
+src/Game.lua
+src/UI.lua
+src/Core.lua
